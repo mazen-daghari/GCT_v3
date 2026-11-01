@@ -198,40 +198,7 @@ The architecture connects field-level industrial devices to top-floor management
 
 5. Microsoft Excel (for report generation modules).
 
-### Step-by-Step Installation
 
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/your-username/GCT4-Industrial-SCADA.git
-   cd GCT4-Industrial-SCADA
-   ```
-
-2. **Configure OPC Communications (KepServerEX):**
-
-   * Open KepServerEX and load the channel configuration from `config/KepServerEX_Config.opf`.
-
-   * Configure the ControlLogix driver ID with your target PLC Ethernet IP:
-
-     ```text
-     Device ID: 10.10.145.1,1,0  # [IP Address],[Port],[CPU Slot]
-     ```
-
-   * Enable OPC Tag Auto-Generation to expose global tags (`A_MP3508A_09`, `ETAT_DISJ_DAP_B`, `LT408`, etc.).
-
-3. **Database & DSN Registration:**
-
-   * Register an ODBC System DSN named `SRC_DSN` pointing to `database/eBD.mdb` via Windows **ODBC Data Source Administrator (32-bit)**.
-
-   * Enable the **DataLogger** plug-in in KepServerEX to point to `SRC_DSN`.
-
-4. **Build the Visual Studio Solution:**
-
-   * Open `src/GCT4_SCADA_App/GCT4_SCADA_App.sln` in Visual Studio.
-
-   * Ensure `COPC32.dll` is correctly referenced in the project references.
-
-   * Compile and run in `Release` mode.
 
 ##  Technical Code Highlights
 
