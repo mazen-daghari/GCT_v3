@@ -1,6 +1,4 @@
-# GCT_v4 updated
-Industry 4.0 Plateform
-# GCT4 — Distributed Industrial SCADA & Multi-Site Supervision Platform
+# GCT4 A Distributed Industrial SCADA & Multi-Site Supervision Platform
 
 > **Industrial Automation & Distributed SCADA System for Groupe Chimique Tunisien (GCT)**
 >
